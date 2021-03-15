@@ -1,0 +1,318 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  height: 8rem;
+  background-color: #223a59;
+  color: #f2f2f2;
+  -webkit-box-shadow: 1px 1px 6px 0 #333333;
+          box-shadow: 1px 1px 6px 0 #333333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+ul a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.tel {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #223a59;
+}
+
+.cover {
+  width: 100%;
+  height: 60vh;
+  background-image: url(./images/Widoki/Giewont2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #f2f2f2;
+}
+
+main {
+  padding: 3rem;
+}
+
+.description {
+  width: 100%;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.description p {
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+.tiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tiles div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 20rem;
+  margin: 2rem;
+  background-color: #61788c;
+  -webkit-box-shadow: 1px 1px 5px #aaa;
+          box-shadow: 1px 1px 5px #aaa;
+}
+
+.gallery h3 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.gallery-section {
+  margin: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 2rem 2rem;
+      grid-template-areas: "apart0 apart1 apart2 apart3 apart4";
+}
+
+.gallery-section div {
+  background-position: center;
+  background-size: cover;
+  height: 20rem;
+  -webkit-box-shadow: 1px 1px 5px #aaa;
+          box-shadow: 1px 1px 5px #aaa;
+}
+
+.apart0 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: apart0;
+  background-image: url(./images/Apartament1/2.jpg);
+}
+
+.apart1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: apart1;
+  background-image: url(./images/Apartament2/0.jpg);
+}
+
+.apart2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: apart2;
+  background-image: url(./images/Apartament3/2.jpg);
+}
+
+.apart3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: apart3;
+  background-image: url(./images/Apartament4/0.jpg);
+}
+
+.apart4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: apart4;
+  background-image: url(./images/Apartament5/2.jpg);
+}
+
+.rooms {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "room0 room1 room2 room3";
+}
+
+.room0 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: room0;
+  background-image: url(./images/Pokój1/2.jpg);
+}
+
+.room1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: room1;
+  background-image: url(./images/Pokój2/2.jpg);
+}
+
+.room2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: room2;
+  background-image: url(./images/Pokój3/2.jpg);
+}
+
+.room3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: room3;
+  background-image: url(./images/Pokój4/0.jpg);
+}
+
+.divider {
+  width: 90%;
+  height: 1px;
+  margin: 6rem auto;
+  background-color: #888888;
+}
+
+.contact {
+  height: 50vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 2rem 2rem;
+      grid-template-areas: "header header map map" "header header map map";
+}
+
+.contact-img {
+  grid-area: img;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/Widoki/Giewont2.jpg);
+}
+
+.contact-header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-header p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.map {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: map;
+  border: 1px solid #ddd;
+}
+/*# sourceMappingURL=style.css.map */

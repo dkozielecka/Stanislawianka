@@ -141,10 +141,10 @@ main {
   margin: 3rem;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 2rem 2rem;
-  grid-template-areas: "apart0 apart1 apart2 apart3";
+  grid-template-areas: "apart0 apart1 apart2 apart3 apart4";
 
   div {
     background-position: center;
@@ -155,153 +155,99 @@ main {
 }
 
 .apart0 {
-  div:nth-child(1) {
-    grid-area: apart0;
-    background-image: url(./images/Apartament1/0.jpg);
-  }
-  div:nth-child(2) {
-    grid-area: apart1;
-    background-image: url(./images/Apartament1/1.jpg);
-  }
-  div:nth-child(3) {
-    grid-area: apart2;
-    background-image: url(./images/Apartament1/2.jpg);
-  }
-  div:nth-child(4) {
-    grid-area: apart3;
-    background-image: url(./images/Apartament1/3.jpg);
-  }
+  grid-area: apart0;
+  background-image: url(./images/Apartament1/2.jpg);
 }
 
 .apart1 {
-  div:nth-child(1) {
-    grid-area: apart0;
-    background-image: url(./images/Apartament2/0.jpg);
-  }
-  div:nth-child(2) {
-    grid-area: apart1;
-    background-image: url(./images/Apartament2/1.jpg);
-  }
-  div:nth-child(3) {
-    grid-area: apart2;
-    background-image: url(./images/Apartament2/2.jpg);
-  }
-  div:nth-child(4) {
-    grid-area: apart3;
-    background-image: url(./images/Apartament2/3.jpg);
-  }
+  grid-area: apart1;
+  background-image: url(./images/Apartament2/0.jpg);
 }
 
 .apart2 {
-  div:nth-child(1) {
-    grid-area: apart0;
-    background-image: url(./images/Apartament3/0.jpg);
-  }
-  div:nth-child(2) {
-    grid-area: apart1;
-    background-image: url(./images/Apartament3/1.jpg);
-  }
-  div:nth-child(3) {
-    grid-area: apart2;
-    background-image: url(./images/Apartament3/2.jpg);
-  }
-  div:nth-child(4) {
-    grid-area: apart3;
-    background-image: url(./images/Apartament3/3.jpg);
-  }
+  grid-area: apart2;
+  background-image: url(./images/Apartament3/2.jpg);
 }
 
 .apart3 {
-  div:nth-child(1) {
-    grid-area: apart0;
-    background-image: url(./images/Apartament4/0.jpg);
-  }
-  div:nth-child(2) {
-    grid-area: apart1;
-    background-image: url(./images/Apartament4/1.jpg);
-  }
-  div:nth-child(3) {
-    grid-area: apart2;
-    background-image: url(./images/Apartament4/2.jpg);
-  }
-  div:nth-child(4) {
-    grid-area: apart3;
-    background-image: url(./images/Apartament4/3.jpg);
-  }
+  grid-area: apart3;
+  background-image: url(./images/Apartament4/0.jpg);
 }
 
 .apart4 {
-  div:nth-child(1) {
-    grid-area: apart0;
-    background-image: url(./images/Apartament5/0.jpg);
-  }
-  div:nth-child(2) {
-    grid-area: apart1;
-    background-image: url(./images/Apartament5/1.jpg);
-  }
-  div:nth-child(3) {
-    grid-area: apart2;
-    background-image: url(./images/Apartament5/2.jpg);
-  }
-  div:nth-child(4) {
-    grid-area: apart3;
-    background-image: url(./images/Apartament5/3.jpg);
-  }
+  grid-area: apart4;
+  background-image: url(./images/Apartament5/2.jpg);
+}
+
+.rooms {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "room0 room1 room2 room3";
+}
+
+.room0 {
+  grid-area: room0;
+  background-image: url(./images/Pokój1/2.jpg);
+}
+
+.room1 {
+  grid-area: room1;
+  background-image: url(./images/Pokój2/2.jpg);
+}
+
+.room2 {
+  grid-area: room2;
+  background-image: url(./images/Pokój3/2.jpg);
+}
+
+.room3 {
+  grid-area: room3;
+  background-image: url(./images/Pokój4/0.jpg);
 }
 
 .divider {
   width: 90%;
   height: 1px;
-  margin: 1rem auto;
+  margin: 6rem auto;
   background-color: #888888;
 }
 
 .contact {
-  width: 80%;
-  margin: 0 auto;
-  padding: 0 2rem;
+  height: 50vh;
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 3rem 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem 2rem;
   grid-template-areas:
-    "img img img map map"
-    "img img img map map"
-    "contact contact contact none none";
+    "header header map map"
+    "header header map map";
 }
-.map {
-  grid-area: map;
-}
+
 .contact-img {
   grid-area: img;
 
-  img {
-    max-width: 100%;
-    height: auto;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/Widoki/Giewont2.jpg);
+}
+
+.contact-header {
+  grid-area: header;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin: 1rem 0;
+
+    font-size: 1.5rem;
   }
 }
-.contact-data {
-  grid-area: contact;
+
+.map {
+  grid-area: map;
+
+  border: 1px solid #ddd;
 }
-
-// .contact {
-//   display: flex;
-//   padding: 0 2rem;
-//   flex-wrap: wrap;
-//   justify-content: space-around;
-
-//   height: 50vh;
-//   h3 {
-//     font-family: "Raleway", sans-serif;
-//     font-size: 3rem;
-//   }
-// }
-
-// .contact-img {
-//   width: 45%;
-
-//   img {
-//     width: 100%;
-//     height: auto;
-//   }
-// }
