@@ -32,6 +32,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  z-index: 10;
 }
 
 ul {
@@ -250,4 +252,8 @@ main {
   grid-area: map;
 
   border: 1px solid #ddd;
+}
+
+.gg-box img:nth-child(2n):not(:last-of-type) {
+  grid-row-end: none !important;
 }
