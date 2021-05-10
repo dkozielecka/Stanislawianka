@@ -1,9 +1,10 @@
 @charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -16,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -26,7 +27,7 @@ nav {
   background-color: #223a59;
   color: #f2f2f2;
   -webkit-box-shadow: 1px 1px 6px 0 #333333;
-          box-shadow: 1px 1px 6px 0 #333333;
+  box-shadow: 1px 1px 6px 0 #333333;
   position: fixed;
   top: 0;
   left: 0;
@@ -34,11 +35,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   z-index: 10;
 }
 
@@ -48,10 +49,10 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   list-style: none;
 }
 
@@ -101,15 +102,15 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: #f2f2f2;
 }
 
@@ -124,15 +125,15 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .description p {
@@ -145,21 +146,21 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .tiles div {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   height: 20rem;
   margin: 2rem;
   background-color: #61788c;
   -webkit-box-shadow: 1px 1px 5px #aaa;
-          box-shadow: 1px 1px 5px #aaa;
+  box-shadow: 1px 1px 5px #aaa;
 }
 
 .gallery h3 {
@@ -172,11 +173,11 @@ main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-rows: 1fr;
   gap: 2rem 2rem;
-      grid-template-areas: "apart0 apart1 apart2 apart3 apart4";
+  grid-template-areas: "apart0 apart1 apart2 apart3 apart4";
 }
 
 .gallery-section div {
@@ -184,7 +185,7 @@ main {
   background-size: cover;
   height: 20rem;
   -webkit-box-shadow: 1px 1px 5px #aaa;
-          box-shadow: 1px 1px 5px #aaa;
+  box-shadow: 1px 1px 5px #aaa;
 }
 
 .apart0 {
@@ -224,8 +225,8 @@ main {
 
 .rooms {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "room0 room1 room2 room3";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "room0 room1 room2 room3";
 }
 
 .room0 {
@@ -268,11 +269,11 @@ main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 2rem 2rem;
-      grid-template-areas: "header header map map" "header header map map";
+  grid-template-areas: "header header map map" "header header map map";
 }
 
 .contact-img {
@@ -293,14 +294,14 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contact-header p {
@@ -319,5 +320,9 @@ main {
 
 .gg-box img:nth-child(2n):not(:last-of-type) {
   grid-row-end: none !important;
+}
+
+section.disabled {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
