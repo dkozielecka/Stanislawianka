@@ -326,3 +326,7 @@ section.disabled {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
+
+li.active {
+  border-bottom: 1px solid white;
+}
